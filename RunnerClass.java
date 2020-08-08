@@ -36,7 +36,7 @@ public class RunnerClass {
     public RunnerClass(){
         try
         {
-            FileInputStream fis = new FileInputStream("C:\\Users\\AR415\\Desktop\\Programming\\Projects\\Employee Details - Java\\JavaProject\\Deatils.txt");
+            FileInputStream fis = new FileInputStream("");
             ObjectInputStream ois = new ObjectInputStream(fis);
 
             employeeList = (ArrayList) ois.readObject();
@@ -78,7 +78,7 @@ public class RunnerClass {
 
         try
         {
-            FileOutputStream fos = new FileOutputStream("C:\\Users\\AR415\\Desktop\\Programming\\Projects\\Employee Details - Java\\JavaProject\\Deatils.txt");
+            FileOutputStream fos = new FileOutputStream("");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(employeeList);
             oos.close();
@@ -129,7 +129,7 @@ public class RunnerClass {
 
         try
         {
-            FileOutputStream fos = new FileOutputStream("C:\\Users\\AR415\\Desktop\\Programming\\Projects\\Employee Details - Java\\JavaProject\\Deatils.txt");
+            FileOutputStream fos = new FileOutputStream("");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(employeeList);
             oos.close();
